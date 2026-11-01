@@ -20,7 +20,7 @@ A Matrix "digital rain" screensaver for Windows 11 (and 10). Mirrored half-width
 2. Right-click the file and choose **Install**, or copy it to `C:\Windows\System32`.
 3. Select **Matrix** under *Settings → Personalization → Lock screen → Screen saver*.
 
-The binaries are not code-signed, so Windows SmartScreen may show a warning. You can verify the download against `SHA256SUMS.txt` in the release, or build it yourself (below).
+The binaries are not code-signed, so Windows SmartScreen may show a warning. You can verify the download against [`SHA256SUMS.txt`](SHA256SUMS.txt) (checksums of the v1.0.0 binaries; on Windows: `certutil -hashfile Matrix.scr SHA256`), or build it yourself (below).
 
 To uninstall, delete the `.scr` file from `C:\Windows\System32`.
 
@@ -73,3 +73,7 @@ Everything is a constant in `matrix.c`:
 First release, cross-compiled from Linux. Bug reports are welcome, ideally with your monitor setup (resolutions, arrangement, scaling) for multi-monitor issues.
 
 Known limitations: the monitor layout is read once at start (hot-plugging while running is not handled); rendering is on the CPU, which is fine for typical setups but can be heavy on very large multi-4K desktops.
+
+## License
+
+[MIT](LICENSE)
